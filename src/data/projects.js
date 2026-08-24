@@ -3,7 +3,7 @@ export const projects = [
     id: 1, 
     title: 'Inventory Management System', 
     description: 'A full-stack inventory and stock management system built with Laravel and MySQL. Features include product tracking, stock levels, and transaction history.', 
-    link: 'https://github.com/Artemiaa23/stok-krate'
+    link: 'https://github.com/rjtnchn/stok-krate.git'
   },
   { 
     id: 2, 
@@ -15,18 +15,18 @@ export const projects = [
     id: 3, 
     title: 'Student Directory', 
     description: 'A React practice project displaying student information with search and filter functionality.', 
-    link: '#'
+    link: 'https://github.com/Artemiaa23/student-directory.git'
   },
   { 
     id: 4, 
-    title: 'Product Catalog', 
-    description: 'Browse and view product data fetched from an API with dynamic routing.', 
-    link: '#'
+    title: 'Birthday Gift', 
+    description: 'A Website i made for my BF birthday using our prof discuss.', 
+    link: 'https://github.com/Artemiaa23/birthday-surprise.git'
   },
   { 
     id: 5, 
     title: 'Lab Activity 1 — HTML & CSS', 
-    description: 'Introduction to web development using semantic HTML5 and modern CSS3.', 
+    description: 'Introduction to web development using semantic HTML and modern CSS.', 
     link: '#'
   },
   { 
