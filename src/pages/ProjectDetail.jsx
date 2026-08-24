@@ -7,24 +7,34 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
-        <h1>Project Not Found ❌</h1>
-        <p>The project you're looking for doesn't exist.</p>
-        <Link to="/projects" style={{ color: '#007bff' }}>← Back to Projects</Link>
+      <div className="page-container">
+        <div className="card" style={{ textAlign: 'center' }}>
+          <h1>Oops! ❌</h1>
+          <p>This project doesn't exist.</p>
+          <Link to="/projects" className="btn">← Back to Projects</Link>
+        </div>
       </div>
     );
   }
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
-      <h1>{project.title}</h1>
-      <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>{project.description}</p>
-      {project.link && project.link !== '#' && (
-        <p><a href={project.link} target="_blank" rel="noreferrer" style={{ color: '#007bff' }}>View on GitHub →</a></p>
-      )}
-      <Link to="/projects" style={{ display: 'inline-block', marginTop: '2rem', color: '#007bff' }}>
-        ← Back to All Projects
-      </Link>
+    <div className="page-container">
+      <div className="card">
+        <h1>{project.title}</h1>
+        <p style={{ fontSize: '1.15rem', lineHeight: '1.8', marginTop: '1.5rem' }}>
+          {project.description}
+        </p>
+        {project.link && project.link !== '#' && (
+          <p style={{ marginTop: '1.5rem' }}>
+            <a href={project.link} target="_blank" rel="noreferrer" className="btn">
+              🔗 View on GitHub
+            </a>
+          </p>
+        )}
+        <Link to="/projects" style={{ display: 'inline-block', marginTop: '2rem' }}>
+          ← Back to All Projects
+        </Link>
+      </div>
     </div>
   );
 }

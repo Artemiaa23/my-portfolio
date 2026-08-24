@@ -1,3 +1,4 @@
+/* src/index.css */
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,141 @@
 }
 
 body {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fdfbfb 100%);
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 35%, #ff9a9e 70%, #fecfef 100%);
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #444;
+  font-family: 'Segoe UI', 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a3f47;
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container for all pages */
+.page-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card style for content */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(255, 117, 140, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin-bottom: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  color: #703d57;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #a06580;
+  margin: 1.5rem 0 0.8rem;
+}
+
+p {
+  font-size: 1.05rem;
+  color: #5c4b55;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(255, 117, 140, 0.35);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 117, 140, 0.45);
+}
+
+/* Links */
+a {
+  color: #ff758c;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e85a75;
+}
+
+/* Project cards grid */
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(255, 117, 140, 0.12);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 117, 140, 0.2);
+}
+
+/* Form inputs */
+input, textarea {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ffd6e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #4a3f47;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #ff758c;
+  box-shadow: 0 0 0 3px rgba(255, 117, 140, 0.15);
+}
+
+/* Navbar */
+nav {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #887780;
+  font-size: 0.9rem;
+  margin-top: 3rem;
 }
